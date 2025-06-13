@@ -11,16 +11,16 @@
 
 ### 資料來源與處理方式
 - **原始資料**：`zhwiki-latest-pages-articles.xml.bz2`（2025 年 6 月 1 日版本，約 3.1GB）
-- **處理範圍**：擷取前 1200 MiB 的文章內容
+- **處理範圍**：擷取全部的文章內容
 - **字體轉換**：使用 [OpenCC](https://github.com/BYVoid/OpenCC) 將簡體中文轉換為台灣正體中文
 - **字符範圍**：僅保留 Unicode 範圍 `\u4e00` 至 `\u9fff` 的中文字元
-- **輸出格式**：共產生 356 個檔案（`output_000.txt` ~ `output_355.txt`），每檔含 10 萬筆 trigram 頻率資料
+- **輸出格式**：共產生 528 個檔案（`output_000.txt` ~ `output_527.txt`），每檔含 10 萬筆 trigram 頻率資料
 
 ---
 
 ### 語料統計
-- **總 trigram 數量**：35,539,139 條（約 3.55 億筆字元組合）
-- **檔案數量**：356 個 `.txt` 檔案
+- **總 trigram 數量**：52,780,764 條（約五千萬筆字元組合）
+- **檔案數量**：528 個 `.txt` 檔案
 - **排序方式**：依照頻率由高至低排序
 - **檔案格式**：每行為 `trigram<tab>頻率` 格式
 
@@ -82,16 +82,16 @@ This project provides a high-quality Chinese trigram corpus designed specificall
 
 ### Data Source and Processing
 - **Source**: `zhwiki-latest-pages-articles.xml.bz2` (June 1, 2025 version, ~3.1GB)
-- **Scope**: Extracted the first 1200 MiB of article content
+- **Scope**: Extracted all of the article content
 - **Conversion**: Used [OpenCC](https://github.com/BYVoid/OpenCC) to convert Simplified Chinese into Traditional Chinese (Taiwan variant)
 - **Character Filtering**: Only includes Chinese characters within Unicode range `\u4e00` to `\u9fff`
-- **Output**: 356 files (`output_000.txt` to `output_355.txt`), each containing 100,000 trigrams
+- **Output**: 528 files (`output_000.txt` to `output_527.txt`), each containing 100,000 trigrams
 
 ---
 
 ### Corpus Statistics
-- **Total Trigrams**: 35,539,139 entries (~355 million character sequences)
-- **File Count**: 356 `.txt` files
+- **Total Trigrams**: 52,780,764 entries (~52 million character sequences)
+- **File Count**: 528 `.txt` files
 - **Sorting**: Sorted in descending order of frequency
 - **Format**: Each line is formatted as `trigram<tab>frequency`
 
@@ -104,7 +104,6 @@ This project provides a high-quality Chinese trigram corpus designed specificall
 及江蘇	128
 生中有	128
 ```
-
 
 ---
 
